@@ -1,0 +1,469 @@
+@charset "utf-8";
+/* CSS Document */
+.bg {
+
+	background-color:#666;
+	background-image: url(../images/bg_img.jpg);
+	background-size: contain;
+	background-attachment:fixed;
+	width: 100%;
+	position:relative;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+@charset "utf-8";
+/* CSS Document */
+/*TOP區塊 start*/
+.fb-like{
+	display:none;
+}
+
+@media (min-width: 992px) {
+	.fb-like{
+		display: block;
+		right:45px;
+		top:50px;
+		width:130px;
+		height:20px;
+	}
+}
+
+.top_layout{
+	margin-bottom: 0;
+	width: 1280px;
+	height: 120px;
+	background: #fff;
+	margin-right: 16px;
+	position: relative;
+}
+
+
+
+.top_logo{
+	width: 179px;
+	height: 80px;
+	margin-top: 19px;
+	margin-left: 32px;
+	float: left;
+	cursor: pointer;
+}
+
+.top_logo a{
+	display: inline-block;
+	width: 179px;
+	height: 80px;
+	background-image: url(https://www.icheers.tw/iCheers/Content/images/iCheers_logo_m.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.top_layout:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.top_nav{
+	float: right;
+	font-family: 'Airal',"微軟正黑體";
+}
+
+.top_nav .option{
+	font-size: 1rem;
+	color: #999;
+	line-height: 60px;
+	float: left;
+	padding: 0 10px;
+}
+
+.top_nav .option.hideinmobile{
+	display: none;
+}
+
+.top_nav .option a{
+	color: #999;
+	text-decoration: none;
+}
+
+.top_nav .option+span{
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	margin-top: 23px;
+	background: #cccccc;
+	float: left;
+}
+
+.top_nav .option.hideinmobile+span{
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.top_layout{
+		margin-bottom: 0;
+		width: 1280px;
+		height: 120px;
+		background: #fff;
+		margin-right: 16px;
+		position: relative;
+	}
+
+
+	.top_logo{
+		width: 179px;
+		height: 80px;
+		margin-top: 19px;
+		margin-left: 32px;
+		float: left;
+		cursor: pointer;
+	}
+
+	.top_nav{
+		margin-right: 24px;
+	}
+
+	.top_nav .option{
+		font-size: 3rem;
+		color: #999;
+		line-height: 120px;
+		float: left;
+		padding: 0 20px;
+	}
+
+	.top_nav .option+span{
+		display: inline-block;
+		width: 1px;
+		height: 30px;
+		margin-top: 45px;
+		background: #666666;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.top_layout{
+		height: 110px;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	.top_logo{
+		width: 162px;
+		height: 70px;
+		margin-top: calc((110px - 70px)/2);
+	}
+
+	.top_nav{
+		position: absolute;
+		right: 24px;
+    	top: 10px;
+	}
+
+	.top_nav .option{
+		font-size: 12px;
+		line-height: 20px;
+		padding: 0 10px;
+	}
+
+	.top_nav .option+span{
+		height: 10px;
+		margin-top: 5px;
+		background: #cccccc;
+	}
+
+	.top_nav .option a:hover{
+		text-decoration: underline;
+		color: #333;
+	}
+
+	.top_nav .option.hideinmobile{
+		display: block;
+	}
+
+	.top_nav .option.hideinmobile+span{
+		display: block;
+	}
+}
+
+/*TOP區塊 end*/
+
+/*footer區塊 start*/
+.Warning{
+	background:#000;
+	text-align: center;
+	width:100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index:99999;
+}
+
+.WarningIMG{
+	width:706px;
+	height:120px;
+	margin:0 auto;
+	background-image:url(http://www.icheers.tw/iCheers/content/images/Warning_mobile.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+	.Warning{
+		background:#000;
+		text-align: center;
+		width:100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index:99999;
+	}
+
+	.WarningIMG{
+		width:706px;
+		height:120px;
+		margin:0 auto;
+		background-image:url(http://www.icheers.tw/iCheers/content/images/Warning_mobile.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+.Warning{
+	background:#000;
+	text-align: center;
+	width:100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index:99999;
+}
+
+.WarningIMG{
+	width:1023px;
+	height:77px;
+	margin:0 auto;
+	background-image:url(http://www.icheers.tw/iCheers/content/images/footer_bg.jpg);
+}
+
+}
+/*footer區塊 end*/
+
+
+/*back top btn*/
+
+#mylist{
+	display: none;
+}
+
+#mylist_mobile{
+	width: 150px;
+	height: 150px;
+	background-color: #f3f4f5;
+	border-radius: 50%;
+	position: fixed;
+	right: 3%;
+	bottom: 10%;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+	z-index: 999999;
+	cursor: pointer;
+}
+
+#mylist_mobile a {
+	width: 150px;
+	height: 150px;
+	display: block;
+	background-image: url(../images/mylist_mobile.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#back-top{
+	display: none;
+}
+
+@media (min-width: 992px) {
+
+#mylist_mobile{
+	display: none;
+}
+
+#back-top {
+	display: block;
+    position: fixed;
+    bottom: 100px;
+    margin-left: 85%;
+    z-index: 99;
+}
+
+#back-top a {
+    width: 50px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #666666;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 100%;
+}
+
+#back-top span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 7px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    
+    background-image: url('../images/top.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#back-top a:hover {
+    color: #000;
+}
+
+#back-top a:hover span {
+    background-color: #ddbd68;
+}
+
+#mylist {
+	display: block;
+    position: fixed;
+    bottom: 200px;
+    margin-left: 85%;
+    z-index: 99;
+}
+
+#mylist p {
+    display: block;
+    width: 80%;
+    /* text-wrap: normal; */
+    font-family: "微軟正黑體";
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#mylist a {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 0;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    background-color: #ddd;
+}
+
+#mylist span {
+    width: 80%;
+    margin: 10%;
+    display: block;
+    position: relative;
+    top: 12%;
+    left: -1%;
+    font-family: "微軟正黑體";
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#mylist a:hover {
+    background-color: #ddbd68;
+}
+
+	.mv{
+	background-image:url("../images/2020Weinbach_paper_02_02.jpg");
+	background-repeat: repeat;
+	
+	width:697px;
+	height: 1056px;
+	}
+	
+}
+.EDM_wrap td {
+	position: relative;
+}
+.addListBTN {
+	position: absolute;
+	width: 149px;
+	height: 200px;
+	top: 350px;
+	right: 360px;
+	background-color: transparent;
+	border: none;
+	background-image: url(../images/addBTN.png);
+	background-size: contain;
+	background-position: center;
+	cursor: pointer;
+}
+.addListBTN_big {
+	width: 189px;
+	height: 255px;
+	top: 20px;
+	right: 120px;
+}
+
+.addListBTN:hover {
+	animation: swing 1s 1;
+	}
+@keyframes swing {
+	15%{transform: translateX(5px)}
+	40%{transform: translateX(-5px)}
+	65%{transform: translateX(2px)}
+	85%{transform: translateX(-2px)}
+	100%{transform: translateX(0)}
+}
+
+.winedetail {
+	position: absolute;
+	width: 855px;
+	height: 260px;
+	display: block;
+	top: 0;
+	left: 100px;
+	cursor: pointer;
+	background-color: transparent;
+}
+.winedetail_top {
+	position: absolute;
+	width: 690px;
+	height: 103px;
+	display: block;
+	top: 395px;
+	left: 70px;
+	cursor: pointer;
+	background-color: transparent;
+}
